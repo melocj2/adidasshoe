@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  php:
+    image: panbanglanfeng/fanshawe-ims:apache_php
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - ${APP_PORT}:80
+    environment:
+      IDP_ENVIRONMENT: docker

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Product Home Page</title>
+</head>
+<body>
+    <h3 class="sectionTitleHide">Main Body</h3>
+    <section id="impactSection">
+        <h3 class="sectionTitleHide">Impact Section</h3>
+        <div id="hamburgWrapper">
+            <h3 class="sectionTitleHide">Hamburger Menu Wrapper</h3>
+            <div class="menu" id="hamburgTop"></div>
+            <div class="menu" id="hamburgMid"></div>
+            <div class="menu" id="hamburgBot"></div>
+        </div>
+        <nav id="navMenu">
+            <h3 class="sectionTitleHide">Main Nav</h3>
+            <ul>
+                <li class="navHome"><a href="#">HOME</a></li>
+                <li class="navMen"><a href="#">MEN</a></li>
+                <li class="navWomen"><a href="#">WOMEN</a></li>
+                <li class="navKids"><a href="#">KIDS</a></li>
+                <li class="navContact"><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <img src="images/adidas.svg" id="impactLogo" alt="adidas logo">
+        <img 
+            src="images/heroimage/heroimage.9k.jpg" 
+            id="heroImage" 
+            alt="adidas shoe">
+        <article id="impactStatement">
+            <h3 class="sectionTitleHide">Impact Section Statement</h3>
+            <h3>Make <br> EVERY GAME </h3> <br> <h2> GREAT </h2> <br> 
+            <p>Adidas shoes guarantee the most comfort to every step of the game.<p>
+        </article>
+    </section>
+    <section id="aboutSection">
+        <h3 class="sectionTitleHide">About Section</h3>
+        <h3 id="aboutTitle">About</h3>
+        <article id="aboutInfo">
+            <h5 id="introAboutInfo">STORIES, STYLES AND SPORTSWEAR AT ADIDAS, SINCE 1949</h5>
+            <p id="bodyAboutInfo">Sport keeps us fit. Keeps you mindful. Brings us together. Through sport we have the power to change lives. Whether it is through personal experience, or stories of inspiring athletes, it helps us get up and get moving. </p>
+        </article>
+        <button id="learnMore">LEARN MORE</button>
+       <img src="images/adidasteal/adidastealshoes.7k.jpg" id="tealShoesAboutImage" alt="teal adidas shoe"> 
+    </section>
+    <section id="featuresSection">
+        <h3 class="sectionTitleHide">Features Section</h3>
+        <h3 id="featuresTitle">Features</h3>
+        <ul id="featuresList">
+            <li>Regular Fit</li>
+            <li>Lace Closure</li>
+            <li>Leather Upper</li>
+            <li>Firm Ground Outsole</li>
+            <li>Product Colour: Bold Blue / Silver / Metalic / Shock Pink</li>
+        </ul>
+
+        <!-- 3d model viewer goes here -->
+        <model-viewer id="modelViewer" bounds="tight" src="images/soccershoe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" camera-orbit="-67.81deg 22.5deg auto">
+            <button class="Hotspot" slot="hotspot-1" data-position="-58.469255311494294m 29.23632103532767m 2.287480761669321m" data-normal="-0.4631847313723854m 0.7207834441733209m -0.5156851085974237m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">1 regular fit
+                </div>
+            </button><button class="Hotspot" slot="hotspot-2" data-position="-15.651491972112304m 58.96218233585687m 1.6260294407030291m" data-normal="-0.32875339772201567m 0.918549072921468m 0.21951948460522133m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">2 lace closure
+                </div>
+            </button><button class="Hotspot" slot="hotspot-3" data-position="-33.86410756319857m 37.04023930615978m 29.849004464071744m" data-normal="0.12955543714914936m 0.5766497985137398m 0.8066538282182488m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">3 leather upper
+                </div>
+            </button><button class="Hotspot" slot="hotspot-4" data-position="-56.95215332105802m 4.759179960426781m -0.45101423462611656m" data-normal="-0.1288214891998485m -0.30870769401917963m -0.9423930090857499m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">4 firm ground outsole
+                </div>
+            </button><button class="Hotspot" slot="hotspot-6" data-position="-17.712632913364008m 33.755321938740366m -12.629539878453905m" data-normal="-0.3296496674657548m -0.15603443176157808m -0.9311199454659742m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">5 product colors: bold blue / silver Metallic / Shock Pink</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div>
+        </model-viewer>
+        
+        
+        <img src="images/adidas-black.svg" id="featuresLogo" alt="black adidas logo">
+    </section>
+<section id="signUp">
+    <h3 id="signTitle">
+        Sign up to our newsletter and get 15% off
+    </h3>
+    <button id="signButton">sign up now</button>
+</section>
+<footer id="mainFooter">
+    <div class="innerInfo">
+        <div id="topFooter">
+        <div id="information">
+            <h4>information</h4>
+            <ul>
+                <li><a href="#!">My account</a></li>
+                <li><a href="#!">My cart</a></li>
+                <li><a href="#!">Contact us</a></li>
+                <li><a href="#!">About Us</a></li>
+            </ul>
+        </div>
+        <div id="categories">
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="#!">Best Sellers</a></li>
+                <li><a href="#!">New Arrivals</a></li>
+                <li><a href="#!">Men</a></li>
+                <li><a href="#!">WOman</a></li>
+            </ul>
+        </div>
+        <div id="contactUs">
+            <h4>Contact Us</h4>
+            <p>info@adidas.ca</p>
+            <ul>
+                <li><img src="images/facebook.png" id="facebook" alt=""></li>
+                <li><img src="images/twitter.png" id="twitter" alt=""></li>
+                <li><img src="images/instagram.png" id="instagram " alt=""></li>
+                
+            </ul>
+
+            <div id="footerLogo"><img src="images/adidas.svg" alt=""></div>
+        </div>
+        </div>
+        <div id="right">
+            <h5>2021 all right reserved</h5>
+            <ul>
+                <li><a href="#!">Privacy Policy</a></li>
+                <li><a href="#!">Terms and conditions</a></li>
+                <li><a href="#!">cookies</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- Use it like any other HTML element -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+</body>
+</html>
