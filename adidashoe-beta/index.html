@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <title>Product Home Page</title>
+</head>
+<body>
+    <h3 class="sectionTitleHide">Main Body</h3>
+    <section id="impactSection">
+        <h3 class="sectionTitleHide">Impact Section</h3>
+        <div id="hamburgWrapper">
+            <h3 class="sectionTitleHide">Hamburger Menu Wrapper</h3>
+            <div class="menu" id="hamburgTop"></div>
+            <div class="menu" id="hamburgMid"></div>
+            <div class="menu" id="hamburgBot"></div>
+        </div>
+        <div id="headerBackdrop"></div>
+        <nav id="navMenu">
+            <h3 class="sectionTitleHide">Main Nav</h3>
+            <ul>
+                <li class="navAbout"><a href="#aboutSection">ABOUT</a></li>
+                <li class="navFeatures"><a href="#featuresSection">FEATURES</a></li>
+                <li class="navVR"><a href="#modelViewer">VR</a></li>
+                <li class="navVideo"><a href="#videoSection">VIDEO</a></li>
+                <li class="navGallery"><a href="#gallerySection">GALLERY</a></li>
+            </ul>
+        </nav>
+        <img src="images/svg/disdis.svg" id="impactLogo" alt="adidas logo">
+        <img 
+            srcset="images/heroimage/heroimage.9k.jpg 900w,
+                    images/heroimage/heroimage2.4k.jpg 2400w""
+            sizes="(max-width: 628px) 900px,
+                    (max-width: 1330px) 1400px,
+                    2400px"
+            src="images/heroimage/heroimage.9k.jpg" 
+            id="heroImage" 
+            alt="adidas shoe">
+        <article id="impactStatement">
+            <h3 class="sectionTitleHide">Impact Section Statement</h3>
+            <h3>Make <br><span id="everyGame"> EVERY GAME </span></h3> <br> <h2> GREAT </h2> <br> 
+            <p>Adidas shoes guarantee the most comfort to every step of the game.<p>
+        </article>
+    </section>
+    <section id="aboutSection">
+        <h3 class="sectionTitleHide">About Section</h3>
+        <h3 id="aboutTitle">About</h3>
+        <article id="aboutInfo">
+            <h5 id="introAboutInfo">STORIES, STYLES AND SPORTSWEAR AT ADIDAS, SINCE 1949</h5>
+            <p id="bodyAboutInfo">Sport keeps us fit. Keeps you mindful. Brings us together. Through sport we have the power to change lives. Whether it is through personal experience, or stories of inspiring athletes, it helps us get up and get moving. </p>
+        </article>
+        <button id="learnMore">LEARN MORE</button>
+       <img 
+       srcset="images/adidasteal/adidastealshoes.7k.jpg 700w,
+                images/adidasteal/adidastealshoes1k.jpg 1000w,
+                images/adidasteal/adidastealshoes1.4k.jpg 1400w"
+       sizes="(max-width: 628px) 700px,
+               (max-width: 767px) 1000px,
+               (max-width: 1024px) 1400px,
+               1400px;"
+       src="images/adidasteal/adidastealshoes.7k.jpg" 
+       id="tealShoesAboutImage" 
+       alt="teal adidas shoe"> 
+    </section>
+    <section id="featuresSection">
+        <h3 class="sectionTitleHide">Features Section</h3>
+        <h3 id="featuresTitle">Features</h3>
+        <ul id="featuresList">
+            <li>Regular Fit</li>
+            <li>Lace Closure</li>
+            <li>Leather Upper</li>
+            <li>Firm Ground Outsole</li>
+            <li>Colors: Red / Teal / Purple</li>
+        </ul>
+
+        <!-- 3d model viewer goes here -->
+        <model-viewer id="modelViewer" bounds="tight" src="images/soccershoe.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1" environment-image="neutral" camera-orbit="-67.81deg 22.5deg auto">
+            <button class="Hotspot" slot="hotspot-1" data-position="-58.469255311494294m 29.23632103532767m 2.287480761669321m" data-normal="-0.4631847313723854m 0.7207834441733209m -0.5156851085974237m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><h2>Regular Fit</h2><p>The shoes were designed to be an optimal fit for all foot shapes.</p>
+                </div>
+            </button><button class="Hotspot" slot="hotspot-2" data-position="-15.651491972112304m 58.96218233585687m 1.6260294407030291m" data-normal="-0.32875339772201567m 0.918549072921468m 0.21951948460522133m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><h2>Lace Closure</h2><p>Lace closures allow a fine-tuned fit that holds</p>
+                </div>
+            </button><button class="Hotspot" slot="hotspot-3" data-position="-33.86410756319857m 37.04023930615978m 29.849004464071744m" data-normal="0.12955543714914936m 0.5766497985137398m 0.8066538282182488m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><h2>Leather Upper</h2><p>The shoes' leather upper provides protection while remaining pliable and light</p>
+                </div>
+            </button><button class="Hotspot" slot="hotspot-4" data-position="-56.95215332105802m 4.759179960426781m -0.45101423462611656m" data-normal="-0.1288214891998485m -0.30870769401917963m -0.9423930090857499m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><h2>Firm Ground Outsole</h2><p>The firm ground outsole helps you maintain excellent stability and traction on any terrain</p>
+                </div>
+            </button><button class="Hotspot" slot="hotspot-6" data-position="-17.712632913364008m 33.755321938740366m -12.629539878453905m" data-normal="-0.3296496674657548m -0.15603443176157808m -0.9311199454659742m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation"><h2>Colors</h2><p>Shoes come in Red, Teal, and Purple.</p>
+                </div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div>
+        </model-viewer>
+        
+        
+        <img src="images/svg/adidas-black.svg" id="featuresLogo" alt="black adidas logo">
+    </section>
+
+    <section id="videoSection">
+        <h3 class="sectionTitleHide">Video Section</h3>
+        <!--Video Player Goes here -->
+        <div id="videoFacePlate"> 
+            <img src="images/icon-play-poster.svg" alt="play button">
+        </div>
+        <video id="videoPlayer" class="playerMain" crossorigin controls preload="auto">
+            <source src="videos/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="gallerySection">
+        <h3 class="sectionTitleHide">Gallery Section</h3>
+        <h3 id="galleryTitle">Check Them All Out</h3>
+        <div id="gallerySlider">
+
+            <img class="sliderImageA" src="images/slider/purpleshoe.jpeg"  alt="purple shoe">
+            <img class="sliderImageB" src="images/slider/tealshoe.jpeg"  alt="teal shoe">
+            <img class="sliderImageC" src="images/slider/purpshoe2.jpeg"  alt="purple shoe 2">
+            <button class="gallerySliderButton" id="leftSlider"><img id="lefty" src="images/lefty.svg" alt=""></button>
+            <img class="sliderImageD" src="images/slider/purpshoe3.jpeg"  alt="purple shoe 3">
+            <button class="gallerySliderButton" id="rightSlider"><img id="righty" src="images/righty.svg" alt=""></button>
+            <img class="sliderImageE" src="images/slider/redshoe.jpeg"  alt="redshoe">
+            <img class="sliderImageF" src="images/slider/purpshoe4.jpeg"  alt="purple shoe 4">
+           
+        </div>
+
+        <div id="galleryCounters">
+            <span class="selected" id="rectA"></span>
+            <span class="unselected" id="rectB"></span>
+            <span class="unselected" id="rectC"></span>
+            <span class="unselected" id="rectD"></span>
+            <span class="unselected" id="rectE"></span>
+            <span class="unselected" id="rectF"></span>
+        </div>
+    </section>
+
+    <section id="signUp">
+        <h3 id="signTitle">
+            Sign up to our newsletter and get 15% off
+        </h3>
+        <button id="signButton">sign up now</button>
+    </section>
+
+    <footer id="mainFooter">
+        <div class="innerInfo">
+            <div id="topFooter">
+            <div id="information">
+                <h4>information</h4>
+                <ul>
+                    <li><a href="#!">My account</a></li>
+                    <li><a href="#!">My cart</a></li>
+                    <li><a href="#!">Contact us</a></li>
+                    <li><a href="#!">About Us</a></li>
+                </ul>
+            </div>
+            <div id="categories">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#!">Best Sellers</a></li>
+                    <li><a href="#!">New Arrivals</a></li>
+                    <li><a href="#!">Men</a></li>
+                    <li><a href="#!">Women</a></li>
+                </ul>
+            </div>
+            <div id="contactUs">
+                <h4></h4>
+                <p>info@adidas.ca</p>
+                <ul>
+                    <li><img src="images/facebook.png" id="facebook" alt=""></li>
+                    <li><img src="images/twitter.png" id="twitter" alt=""></li>
+                    <li><img src="images/instagram.png" id="instagram " alt=""></li>
+                    
+                </ul>
+    
+                <img id="footerLogo" src="images/svg/disdis.svg" alt="">
+            </div>
+            </div>
+            <div id="right">
+                <h5>2021 all right reserved</h5>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">cookies</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- Use it like any other HTML element -->
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+</body>
+</html>
